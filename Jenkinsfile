@@ -4,13 +4,13 @@ pipeline {
         stage('Compile') {            
             steps {                
                 echo 'Compiling...'                
-                bat 'javac HelloWorld.java'            
+                bat '"C:\\Program Files\\Java\\jdk-21\\bin\\javac.exe" HelloWorld.java'            
             }        
         }        
         stage('Run') {            
             steps {                
                 echo 'Running...'                
-                bat 'java HelloWorld'            
+                bat '"C:\\Program Files\\Java\\jdk-21\\bin\\java.exe" HelloWorld'            
             }        
         }    
     }
